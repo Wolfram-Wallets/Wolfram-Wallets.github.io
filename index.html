@@ -2,9 +2,30 @@
 <html>
 <head>
     <title>Wolfram Wallets UF</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <script async src="js/main.js"></script>
 </head>
 <body>
+    <nav>
+        <img src="res/logo.svg">
+        <h1>WOLFRAM WALLETS</h1>
+    </nav>
     <h1>Placera din reservation av Wolfram Wallets</h1>
+    <form id="showroom">
+        <label>
+            <input type="radio" name="kind" value="both"/>
+            <img src="res/both.jpg">
+        </label>
+        <label>
+            <input type="radio" name="kind" value="regular"/>
+            <img src="res/regular.jpg">
+        </label>
+        <label>
+            <input type="radio" name="kind" value="small"/>
+            <img src="res/small.jpg">
+        </label>
+    </form>
+    <iframe id="reserve" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe><!--src="https://docs.google.com/forms/d/e/1FAIpQLSddpZbokm_a3wQRXgZ4Ry_VKWNDS3IU_ZzJkfszNJ3SOZUDiQ/viewform?embedded=true"-->
 
 </body>
 </html>
