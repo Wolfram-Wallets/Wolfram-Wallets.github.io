@@ -1,0 +1,50 @@
+/*******/
+/* CLRS
+base-light: #d4d5d9, #1b1b1b
+blue-light: #d4d5d9, #1b1b1b
+blue-dark: #2a2e37, #d4d5d9
+base-dark: #1e2126, #d4d5d9
+*/
+
+
+body {
+    background-color: #d4d5d9;
+    margin: 0;
+    margin-top: 5em;
+}
+nav {
+    background-color: #2a2e37;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+}
+nav img {
+    position: relative;
+    height: 100%;
+}
+
+nav h1 {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    color: #d4d5d9;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+label input[type=radio]{
+    visibility: hidden;
+    position: absolute;
+}
+label > input + img{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    width: 20%;
+    cursor: pointer;
+}
+label > input:checked + img{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
